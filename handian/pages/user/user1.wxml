@@ -1,0 +1,43 @@
+<!--pages/user/user1.wxml-->
+<view class="totalarea">
+  <view class="userarea">
+    <image class="userravatar" src="{{iconurl}}" bindtap="bindBtnLogin"></image>
+    <view class="userinfoarea" hidden="{{loginstatus == 0}}">
+      <view class="userphonearea">
+        <view class="userphone" >手机号：</view>
+        <view class="userphonenum" >{{userphone}}</view>
+      </view>
+      <image class="logout" src="../../images/logout.png" bindtap="bindBtnLogout"></image>      
+    </view>
+    <view class="loginfo" hidden="{{loginstatus == 1}}" >{{loginfo}}</view>
+  </view>
+
+  <view class="daluotearea">
+    <label class="daluotetitle">汉典名药——心脑血管治病良方</label>
+    <view class="daluoteinfoarea">
+      <image class="daluoteimage" src="../../images/daluote.png" bindtap="binddaluoteinfo"></image>
+      <view class="daluoteintroarea">
+        <label class="daluotename">达洛特®银杏酮酯滴丸</label>
+        <label class="daluoteintro">北京汉典制药有限公司荣誉出品
+      国医大师陈可冀院士倾情推荐</label>
+      </view>
+    </view>
+  </view>
+
+<view class="tulingarea">
+  <label class="tulingtitle">智能答疑</label>
+  <scroll-view class="history" scroll-y="true">
+    <view class="questionitem" wx:for="{{objectArray}}" wx:key="id" style="display: block;"> 
+      <image class="usericon" src="{{item.usericon}}"></image>
+      <label class="questionoranswer">{{item.content}}</label>
+    </view>
+  </scroll-view>
+  <view class="question">
+    <input class="inputquestion" value="{{question}}" bindinput ="bindquestionInput"></input>
+    <button class="sendquestion" bindtap="bindSendQuestion">确定</button>
+  </view>
+</view>
+
+</view>
+
+

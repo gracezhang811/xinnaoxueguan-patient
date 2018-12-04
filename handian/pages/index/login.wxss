@@ -1,0 +1,90 @@
+/**index.wxss**/
+
+.back {
+  width: 750rpx;
+  height: 200rpx;
+}
+
+.logoimage {
+  position: absolute;
+  top: 50rpx;
+  left: 192rpx;
+  width: 364rpx;
+  height: 82rpx;
+}
+
+.inputline {
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  width: 100%;
+  height: 100rpx;
+}
+
+.inputname {
+  display: -webkit-box;
+  width: 130rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:1;
+  overflow: hidden; 
+  text-overflow:ellipsis;
+  text-align: left;
+  margin-left: 50rpx;
+  font-size: 32rpx;
+}
+
+.inputtext {
+  width: 510rpx;
+  height: 60rpx;
+  border-style:solid;
+  border-width:1rpx;
+  border-color: #aaaaaa;
+  font-size: 32rpx;
+}
+
+
+
+.btnsignup {
+  position: absolute;
+  left:180rpx;
+  top:400rpx;
+  width: 200rpx;
+  height: 60rpx;
+  text-align: left;
+  font-size: 28rpx;
+  color: #999999;
+}
+
+.btnresetpwd {
+  position: absolute;
+  left:450rpx;
+  top:400rpx;
+  width: 200rpx;
+  height: 60rpx;
+  text-align: right;
+  font-size: 28rpx;
+  color: #999999;
+}
+
+.btnlogin {
+  position: absolute;
+  left:250rpx;
+  top:500rpx;
+  width: 250rpx;
+  height: 70rpx;
+  display: -webkit-box;
+  line-height: 70rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:1;
+  overflow: hidden; 
+  text-overflow:ellipsis; 
+  text-align: center;
+  font-size: 32rpx;
+  background-color: #5694DF;
+  color: #ffffff;
+  border-radius: 5rpx;
+}

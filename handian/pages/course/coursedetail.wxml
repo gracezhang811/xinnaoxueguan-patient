@@ -1,0 +1,33 @@
+<!--pages/course/coursedetail.wxml-->
+<view>
+  <view >
+    <image class="courseimage" src="{{cover_url}}"> </image>
+  </view>
+
+  <view>
+  <view class="coursetitle">{{course_name}}</view>
+  </view>
+  <view class="navbar" style=" z-index:50">
+    <view wx:for="{{navbar}}" data-idx="{{index}}" wx:key="unique" class="item {{currentTab==index ? 'active' : ''}}" bindtap="navbarTap">
+    {{item}}
+    </view>
+  </view>
+
+  <view class="courseperiodarea" hidden="{{currentTab !== 0}}" >
+    <view class="perioditem" data-id="{{item.video_unique}}" bindtap="bindPeriodItem" wx:for="{{objectArray}}" wx:key="id" style="display: block;"> 
+    <label class="periodtitle">{{item.title}}</label>
+    </view>
+  </view >
+
+  <view class="courseperiodarea" hidden="{{currentTab !== 1}}">
+    <rich-text nodes="{{courseinfo}}"></rich-text>
+  </view>
+
+  <view class="buttonarea">
+    <view hidden="{{isjoin == true}}" class="coursebutton" bindtap="bindJoinCourse">加入课程</view>
+    <view hidden="{{isjoin == false}}" class="coursebutton" bindtap="bindPlayCourse">播放课程</view>
+  </view>
+</view>
+
+
+

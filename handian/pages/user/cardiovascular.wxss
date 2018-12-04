@@ -1,0 +1,133 @@
+/* pages/user/cardiovascular.wxss */
+
+.cardiovasulararea {
+  display: flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  width: 750rpx;
+}
+
+.cardiovasulartitle{
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  width: 710rpx;
+  text-align: left;
+  font-size: 30rpx;
+  height: 40rpx;
+}
+.cdvsl_inputtext{
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  width: 710rpx;
+  text-align: left;
+  font-size: 28rpx;
+  height: 40rpx;
+  color: #800000;
+}
+
+.cdvsl_input_name{
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  width: 670rpx;
+  text-align: left;
+  font-size: 28rpx;
+  height: 40rpx;
+}
+
+.cdvsl_inpute_radio_group{
+  display: flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  width: 750rpx;
+}
+
+.cdvsl_input_radio{
+  margin-top: 10rpx;
+  margin-left: 50rpx;
+  width: 650rpx;
+  text-align: left;
+  font-size: 26rpx;
+  height: 40rpx;
+}
+
+radio .wx-radio-input{
+   border-radius: 50%;/* 圆角 */
+   width: 30rpx;
+   height: 30rpx;
+}
+
+.textinputarea{
+  display: flex;
+  flex-direction:row;
+  height: 90rpx; 
+}
+
+.numinput{
+  margin-left: 50rpx;
+  margin-top: 20rpx;
+  width: 200rpx;
+  height: 50rpx;
+  border-style:solid;
+  border-width:1rpx;
+  border-color: #aaaaaa;
+  font-size: 26rpx;
+}
+
+.unitpicker{
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  width: 400rpx;
+  height: 50rpx;
+  border-style:solid;
+  border-width:1rpx;
+  border-color: #aaaaaa;
+  background-color: #f3f3f3;
+  font-size: 28rpx;
+  display: -webkit-box;
+  line-height: 60rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:1;
+  overflow: hidden; 
+  text-overflow:ellipsis;
+  text-align: left;
+}
+
+.btnresetpwd {
+  position: absolute;
+  left:450rpx;
+  top:400rpx;
+  width: 200rpx;
+  height: 60rpx;
+  text-align: right;
+  font-size: 28rpx;
+  color: #999999;
+}
+
+.submitarea{
+  width: 750rpx;
+  height: 100rpx
+}
+.btnsubmit {
+  margin-top: 20rpx;
+  margin-left: 250rpx;
+  width: 250rpx;
+  height: 60rpx;
+  display: -webkit-box;
+  line-height: 60rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:1;
+  overflow: hidden; 
+  text-overflow:ellipsis; 
+  text-align: center;
+  font-size: 32rpx;
+  background-color: #5694DFFF;
+  color: #ffffff;
+  border-radius: 5rpx;
+}
+
+.blockarea{
+  width: 750rpx;
+  height: 40rpx;
+}

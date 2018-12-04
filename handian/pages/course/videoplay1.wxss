@@ -1,0 +1,2 @@
+/* pages/course/videoplay1.wxss */
+@import "../BCLVideo/video.wxss"

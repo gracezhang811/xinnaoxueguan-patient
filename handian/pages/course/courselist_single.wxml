@@ -1,0 +1,13 @@
+<!--pages/course/courselist_notab.wxml-->
+<template name="list">
+<view class="courseitem" data-id="{{item.id}}" bindtap="bindCourseItem" wx:for="{{objectArray}}" wx:key="id" style="display: block;"> 
+  <image class="coursecover" src="{{item.small_cover_url}}"></image>
+  <label  class="coursetitle">{{item.name}}</label>
+  <label  class="courseinfo">{{item.intro}}</label>
+</view>
+</template>
+
+<!--专家视角-->
+<view  id="one">
+  <template is="list" data="{{objectArray}}" />
+</view>

@@ -1,0 +1,26 @@
+<!--pages/index/signup.wxml-->
+<view >
+  <view class= "back">
+  <image class="logoimage" src="{{logo}}"></image>
+  </view>
+  <view class= "inputline">
+    <text class = "inputname">手机号</text>
+    <input name="inputusername" class="inputtext" bindinput ="userNameInput" ></input>
+  </view>
+    <view class= "inputline">
+    <text class = "inputname">验证码</text>
+    <input name="inputcode" class="inputtextsmall" bindinput ="codeInput" ></input>
+    <view class="btnsendcode" bindtap="bindBtnSendcode">发送验证码</view>
+  </view>
+  <view class= "inputline">
+    <text class = "inputname">密码</text>
+    <input name="inputpasswd" class="inputtext" bindinput="passWdInput" password></input>
+  </view>
+    <view class= "inputline">
+    <text class = "inputname">确认密码</text>
+    <input name="inputpasswdagain" class="inputtext" bindinput="passWdRepeatInput" password></input>
+  </view>
+  <view class="btnsubmit" bindtap="bindBtnSubmit">注册</view>
+</view>
+
+

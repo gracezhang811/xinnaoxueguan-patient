@@ -1,0 +1,97 @@
+/* pages/index/resetpwd.wxss */
+
+.back {
+  width: 750rpx;
+  height: 200rpx;
+}
+
+.logoimage {
+  position: absolute;
+  top: 50rpx;
+  left: 192rpx;
+  width: 364rpx;
+  height: 82rpx;
+}
+
+.inputline {
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  width: 100%;
+  height: 100rpx;
+}
+
+.inputname {
+  display: -webkit-box;
+  width: 140rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:1;
+  overflow: hidden; 
+  text-overflow:ellipsis;
+  text-align: left;
+  margin-left: 50rpx;
+  font-size: 32rpx;
+}
+
+.inputtext {
+  width: 500rpx;
+  height: 60rpx;
+  border-style:solid;
+  border-width:1rpx;
+  border-color: #aaaaaa;
+  font-size: 32rpx;
+}
+
+
+.inputtextsmall {
+  width: 250rpx;
+  height: 60rpx;
+  border-style:solid;
+  border-width:1rpx;
+  border-color: #aaaaaa;
+  font-size: 32rpx;
+}
+
+.btnsendcode {
+  display: -webkit-box;
+  width: 220rpx;
+  height: 60rpx;
+  margin-left: 30rpx;
+  border-style:solid;
+  border-width:1rpx;
+  border-color: #dddddd;
+  font-size: 30rpx;
+  text-align: center;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:1;
+  overflow: hidden; 
+  text-overflow:ellipsis;
+  line-height: 60rpx;
+  background-color: #5694DF;
+  color: #ffffff;
+  border-radius: 5rpx; 
+}
+
+.btnsubmit {
+  position: absolute;
+  left:250rpx;
+  top:620rpx;
+  width: 250rpx;
+  height: 70rpx;
+  display: -webkit-box;
+  line-height: 70rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:1;
+  overflow: hidden; 
+  text-overflow:ellipsis; 
+  text-align: center;
+  font-size: 32rpx;
+  background-color: #5694DF;
+  color: #ffffff;
+  border-radius: 5rpx;
+}

@@ -1,0 +1,41 @@
+<!--pages/news/newslist1.wxml-->
+<!--导航菜单-->
+<view class="navbar" style=" z-index:50">
+  <!--循环-->
+  <view wx:for="{{navbar}}" data-idx="{{index}}" wx:key="unique" class="item {{currentTab==index ? 'active' : ''}}" bindtap="navbarTap">
+    {{item}}
+  </view>
+</view>
+
+<template name="list">
+  <view class="newsitem" data-id="{{item.id}}" bindtap="bindNewsItem" wx:for="{{objectArray}}" wx:key="id" style="display: block;"> 
+  <image class="newscover" src="{{item.small_cover_url}}"></image>
+  <label  class="newstitle">{{item.title}}</label>
+  <label  class="newscontent">{{item.content}}</label>
+  </view>
+</template>
+
+<!--发病因素-->
+<view hidden="{{currentTab !== 0}}" id="one">
+  <template is="list" data="{{objectArray}}" />
+</view>
+
+<!--注意事项-->
+<view hidden="{{currentTab !== 1}}" id="one">
+  <template is="list" data="{{objectArray}}" />
+</view>
+
+<!--预防策略-->
+<view hidden="{{currentTab !== 2}}" id="one">
+  <template is="list" data="{{objectArray}}" />
+</view>
+
+<!--粉碎留言-->
+<view hidden="{{currentTab !== 3}}" id="one">
+  <template is="list" data="{{objectArray}}" />
+</view>
+
+<!--疾病解析-->
+<view hidden="{{currentTab !== 4}}" id="one">
+  <template is="list" data="{{objectArray}}" />
+</view>

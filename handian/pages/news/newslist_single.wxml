@@ -1,0 +1,17 @@
+<!--pages/news/newslist_notab.wxml-->
+
+<template name="list">
+  <view class="newsitem" data-id="{{item.id}}" bindtap="bindNewsItem" wx:for="{{objectArray}}" wx:key="id" style="display: block;"> 
+  <image class="newscover" src="{{item.small_cover_url}}"></image>
+  <label  class="newstitle">{{item.title}}</label>
+  <label  class="newscontent">{{item.content}}</label>
+  </view>
+</template>
+
+<!--发病因素-->
+<view  id="one">
+  <template is="list" data="{{objectArray}}" />
+</view>
+
+
+

@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/main/mainpage",
+    "pages/index/login",
+    "pages/logs/logs",
+    "pages/course/courselist",
+    "pages/course/coursedetail",
+    "pages/course/videoplay",
+    "pages/news/newslist",
+    "pages/news/newsdetail",
+    "pages/user/user",
+    "pages/course/courselist_single",
+    "pages/news/newslist_single",
+    "pages/index/signup",
+    "pages/index/resetpwd",
+    "pages/user/daluoteinfo",
+    "pages/user/cardiovascular",
+    "pages/user/user1",
+    "pages/course/videoplay1"
+  ],
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#1296db",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/product01.png",
+        "iconPath": "images/product.png",
+        "pagePath": "pages/main/mainpage",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/expert01.png",
+        "iconPath": "images/expert.png",
+        "pagePath": "pages/course/courselist",
+        "text": "专家视点"
+      },
+      {
+        "selectedIconPath": "images/news01.png",
+        "iconPath": "images/news.png",
+        "pagePath": "pages/news/newslist",
+        "text": "科普天地"
+      },
+      {
+        "selectedIconPath": "images/problem01.png",
+        "iconPath": "images/problem.png",
+        "pagePath": "pages/user/user",
+        "text": "寻医问药"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "汉典心脑血管",
+    "navigationBarTextStyle": "black"
+  },
+  "debug": true
+}

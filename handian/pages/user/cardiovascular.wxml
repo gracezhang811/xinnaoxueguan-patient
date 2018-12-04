@@ -1,0 +1,100 @@
+<scroll-view scroll-y="true">
+  <view class="cardiovasulararea">		
+    <label class="cardiovasulartitle">心血管风险评估 (10年期)</label>	
+	  <label class="cdvsl_inputtext">请输入:</label>	
+
+    <label class="cdvsl_input_name">人种</label>		
+    <radio-group class="cdvsl_inpute_radio_group" bindchange="radioraceChange">
+      <label class="cdvsl_input_radio" wx:key="{{item.value}}" wx:for="{{RaceArray}}">
+        <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+      </label>
+    </radio-group>
+
+    <label class="cdvsl_input_name">性别</label>		
+    <radio-group class="cdvsl_inpute_radio_group" bindchange="radiosexChange">
+      <label class="cdvsl_input_radio" wx:key="{{item.value}}" wx:for="{{SexArray}}">
+        <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+      </label>
+    </radio-group>    
+
+    <label class="cdvsl_input_name">年龄</label>
+    <view class="textinputarea">
+      <input class="numinput" type="digit"></input>
+      <picker  mode="selector" range-key="name" bindchange="bindPickerChange" value="{{ageunitindex}}" range="{{AgeUnitArray}}">
+          <view class="unitpicker"> {{AgeUnitArray[ageunitindex].name}} </view>
+      </picker>
+    </view>
+
+    <label class="cdvsl_input_name">总胆固醇（mg/dl÷18=mmol/L；mmol/L×18=mg/dl）</label>
+    <view class="textinputarea">
+      <input class="numinput" type="digit"></input>
+      <picker  mode="selector" range-key="name" bindchange="bindPickerChange" value="{{cholunitindex}}" range="{{TotalCholArray}}">
+          <view class="unitpicker"> {{TotalCholArray[cholunitindex].name}} </view>
+      </picker>
+    </view>
+
+    <label class="cdvsl_input_name">高密度脂蛋白胆固醇</label>
+    <view class="textinputarea">
+      <input class="numinput" type="digit"></input>
+      <picker  mode="selector" range-key="name" bindchange="bindPickerChange" value="{{hdlcholunitindex}}" range="{{HDLCholArray}}">
+          <view class="unitpicker"> {{HDLCholArray[cholunitindex].name}} </view>
+      </picker>
+    </view>      
+
+    <label class="cdvsl_input_name">收缩压</label>
+    <view class="textinputarea">
+      <input class="numinput" type="digit"></input>
+      <picker  mode="selector" range-key="name" bindchange="bindPickerChange" value="{{bloodpresunitindex}}" range="{{BloodPressureArray}}">
+          <view class="unitpicker"> {{BloodPressureArray[bloodpresunitindex].name}}  
+          </view>
+      </picker>
+    </view>   
+
+    <label class="cdvsl_input_name">诊断有高血压</label>		
+    <radio-group class="cdvsl_inpute_radio_group" bindchange="radioraceChange">
+      <label class="cdvsl_input_radio" wx:key="{{item.value}}" wx:for="{{HypertensionArray}}">
+        <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+      </label>
+    </radio-group>   
+
+    <label class="cdvsl_input_name">糖尿病</label>		
+    <radio-group class="cdvsl_inpute_radio_group" bindchange="radioraceChange">
+      <label class="cdvsl_input_radio" wx:key="{{item.value}}" wx:for="{{DiabetesArray}}">
+        <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+      </label>
+    </radio-group>   
+
+    <label class="cdvsl_input_name">吸烟</label>		
+    <radio-group class="cdvsl_inpute_radio_group" bindchange="radioraceChange">
+      <label class="cdvsl_input_radio" wx:key="{{item.value}}" wx:for="{{SmokeArray}}">
+        <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+      </label>
+    </radio-group>       
+    <view class="submitarea">
+      <view class="btnsubmit">提交</view>
+    </view>   
+
+    <label class="cdvsl_inputtext">预测结果:</label>	
+
+    <label class="cdvsl_input_name">精度</label>
+    <view class="textinputarea">
+      <input class="numinput" type="digit"></input>
+      <picker  mode="selector" range-key="name" bindchange="bindPickerChange" value="{{decptsindex}}" range="{{DecptsArray}}">
+          <view class="unitpicker"> {{DecptsArray[decptsindex].name}} 
+          </view>
+      </picker>
+    </view>   
+
+    <label class="cdvsl_input_name">十年期风险</label>
+    <view class="textinputarea">
+      <input class="numinput" type="digit"></input>
+      <picker  mode="selector" range-key="name" bindchange="bindPickerChange" value="{{tenyearriskunitindex}}" range="{{TenYearRiskArray}}">
+          <view class="unitpicker"> {{TenYearRiskArray[tenyearriskunitindex].name}} 
+          </view>
+      </picker>
+    </view> 
+
+    <view class="blockarea"></view>  
+  </view>
+
+</scroll-view>

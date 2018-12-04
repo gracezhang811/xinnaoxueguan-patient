@@ -1,0 +1,2 @@
+<!--pages/course/videoplay1.wxml-->
+<include src="../BCLVideo/video.wxml"/>

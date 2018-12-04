@@ -1,0 +1,219 @@
+/* pages/user/user1.wxss */
+
+.totalarea {
+  display: flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  width: 750rpx;
+}
+  .userarea{
+  display: flex;
+  flex-direction:row;
+  width: 750rpx;
+  height: 190rpx;
+}
+
+  .userravatar{
+  margin-top:20rpx;
+  margin-left:30rpx;
+  width: 150rpx;
+  height: 150rpx;
+  border-width: 1rpx;
+  border-color: #ffffff;
+  border-radius: 50%;
+}
+  .loginfo{
+  margin-top:50rpx;
+  margin-left:40rpx;
+  width: 480rpx;
+  height: 120rpx;
+  text-align: left;
+  font-size:26rpx;
+  color: #333333;
+  display: -webkit-box;
+  line-height: 40rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:3;
+  overflow: hidden; 
+  text-overflow:ellipsis; 
+}
+
+.userinfoarea{
+  display: flex;
+  flex-direction:row;
+  margin-top:20rpx;
+  margin-left:20rpx;
+  width: 530rpx;
+  height: 150rpx; 
+}
+
+  .logout{
+  margin-top:50rpx;
+  margin-left:0rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.userphonearea{
+  display: flex;
+  flex-direction:column;
+  margin-left:20rpx;
+  width: 400rpx;
+  height: 150rpx;   
+}
+  .userphone{
+  margin-top:30rpx;
+  margin-left:0rpx;
+  width: 480rpx;
+  height: 40rpx;
+  text-align: left;
+  font-size: 30rpx;
+}
+
+  .userphonenum{
+  margin-top:20rpx;
+  margin-left:0rpx;
+  width: 480rpx;
+  height: 40rpx;
+  text-align: left;
+  font-size: 30rpx;
+}
+
+
+
+  .daluotearea{
+  display: flex;
+  flex-direction:column;
+  width: 750rpx;
+  height: 260rpx;
+}
+
+  .daluotetitle{
+  margin-top:20rpx;
+  margin-left:20rpx;
+  width: 600rpx;
+  height: 40rpx;
+  text-align: left;
+  font-size: 30rpx;
+}
+
+.daluoteinfoarea{
+  display: flex;
+  flex-direction:row; 
+  width: 750rpx;
+  height: 200rpx;  
+}
+  .daluoteimage{
+  margin-top:20rpx;
+  margin-left:20rpx;
+  width: 240rpx;
+  height: 160rpx;
+}
+
+.daluoteintroarea{
+  display: flex;
+  flex-direction:column; 
+  width: 450rpx;
+  height: 200rpx;
+}
+  .daluotename{
+  margin-top:40rpx;
+  margin-left:20rpx;
+  width: 450rpx;
+  height: 40rpx;
+  text-align: left;
+  font-size: 26rpx;
+}
+  .daluoteintro{
+  margin-top:15rpx;
+  margin-left:20rpx;
+  width: 450rpx;
+  height: 80rpx;
+  text-align: left;
+  font-size: 24rpx;
+  color: #555555;
+}
+
+
+  .tulingarea{
+  position: absolute;
+  top: 450rpx;
+  width: 750rpx;
+  bottom: 10rpx;
+}
+
+  .tulingtitle{
+  position: absolute;
+  left:20rpx;
+  width: 600rpx;
+  height: 40rpx;
+  text-align: left;
+  font-size: 30rpx;
+}
+  .history{
+  position: absolute;
+  top: 60rpx;
+  left: 15rpx;
+  width: 720rpx;
+  bottom: 80rpx;
+  background-color: #eeeeee;
+}
+
+.questionitem{
+  display: flex;
+  flex-direction:row;
+  width: 720rpx;
+}
+
+.usericon{
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.questionoranswer{
+  width: 650rpx;
+  margin-left: 10rpx;
+  text-align: left;
+  font-size: 26rpx;
+}
+
+  .question{
+  position: absolute;
+  width: 750rpx;
+  height: 70rpx;
+  bottom: 10rpx;
+}
+
+  .inputquestion{
+  position: absolute;
+  left:10rpx;
+  top:10rpx;
+  width: 570rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+  border-style:solid;
+  border-color: #eeeeee;
+  border-width: 1rpx;
+}
+
+  .sendquestion{
+  position: absolute;
+  left:600rpx;
+  top:11rpx;
+  width: 140rpx;
+  height: 58rpx;
+  display: -webkit-box;
+  line-height: 60rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:1;
+  overflow: hidden; 
+  text-align: center;
+  font-size: 32rpx;
+  background-color: #5694DF;
+  color: #ffffff;
+  border-radius: 5rpx;
+}

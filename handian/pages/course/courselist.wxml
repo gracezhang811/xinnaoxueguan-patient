@@ -1,0 +1,33 @@
+<!--pages/course/courselist1.wxml-->
+<!--导航菜单-->
+<view class="navbar" style=" z-index:50">
+  <!--循环-->
+  <view wx:for="{{navbar}}" data-idx="{{index}}" wx:key="unique" class="item {{currentTab==index ? 'active' : ''}}" bindtap="navbarTap">
+    {{item}}
+  </view>
+</view>
+
+<template name="list">
+<view class="courseitem" data-id="{{item.id}}" bindtap="bindCourseItem" wx:for="{{objectArray}}" wx:key="id" style="display: block;"> 
+  <image class="coursecover" src="{{item.small_cover_url}}"></image>
+  <label  class="coursetitle">{{item.name}}</label>
+  <label  class="courseinfo">{{item.intro}}</label>
+</view>
+</template>
+
+<!--健康讲座-->
+<view hidden="{{currentTab !== 0}}" id="one">
+  <template is="list" data="{{objectArray}}" />
+</view>
+
+<!--专家访谈-->
+<view hidden="{{currentTab !== 1}}" id="one">
+  <template is="list" data="{{objectArray}}" />
+</view>
+
+<!--专家视角-->
+<view hidden="{{currentTab !== 2}}" id="one">
+  <template is="list" data="{{objectArray}}" />
+</view>
+
+
